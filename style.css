@@ -1,1 +1,65 @@
-
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative; 
+  }
+   .banner{
+    text-align: center;
+    color: #fff;
+    animation: shine 4s infinite alternate;
+    position: relative;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   .banner h1{
+    font-size: 3em;
+    margin-bottom: 10px; 
+   }
+   .dropdown{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+   }
+   .menu-btn {
+    padding: 10px 20px;
+    background-color: black;#ff0080
+    border: none;
+    border-radius: 5px;
+    color: crimson;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+   }
+   .menu-btn:hover{
+    background-color: brown;
+   }
+   .menu-list{
+    display: none;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+position:absolute;
+top: 100%;
+left: 0;
+z-index: 10;
+   }
+   .menu-list.show{
+    display: block;
+   }
+   .menu-list li{
+    margin-bottom: 10px;
+   }
+    .menu-list li {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+    }
+.menu-list li a :hover {
+  color: deeppink#ff0080;
+}
